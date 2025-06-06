@@ -1,0 +1,188 @@
+body {
+    background-color: #f4f6fa;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.items {
+    background-color: #1e2e37;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    text-align: center;
+}
+
+#Dashboard {
+    margin-top: 10px;
+}
+
+.items button {
+    background-color: #1e2e37;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.items button:hover {
+    background-color: #2a3b45;
+    border: #f4f6fa;
+}
+
+.items h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.container h1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.Investor-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.Investor-page table {
+    margin-top: 10px;
+    background-color: #f2f3f8;
+    border-spacing: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.Investor-page div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Investor-page table th {
+    background-color: #f2f3f8;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.Investor-page div button {
+    background-color: #2463ed;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 330px;
+    background-color: #fff;
+    padding: 10px;border-radius: 5px;
+}
+
+.form input {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.save {
+    background-color: #2463ed;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 3px;
+}
+
+.close {
+    font-size: larger;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.form div {
+    justify-content: space-between;
+    display: flex;
+}
+
+#create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Investor-page td {
+    text-align: center;
+    background-color: #fff;
+    margin-top: 10px;
+    height: 80px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.edit {
+    background-color: #2463ed;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.delete {
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.edit:hover,
+.delete:hover {
+    opacity: 0.8;
+}

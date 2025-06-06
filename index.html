@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="items">
+        <h2>Dashboard</h2>
+        <button id="Dashboard" onclick="Dashboard()">🏠 Dashboard</button>
+        <button id="Investors>" onclick="Investor()">💼 Investors</button>
+        <button id="Funds" onclick="Funds()">📊 Funds</button>
+    </div>
+    <h1 id="Text">Welcome to the Dashboard</h1>
+           <div id="Investor-page" class="Investor-page hidden">
+            <div>
+                <h2>Investors Page</h2>
+                <button id="add-Investor" onclick="AddInvestor()" >+Add Investor</button>
+            </div>
+            <table id="investors">
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Min Invesment</th>
+                    <th>Max Investment</th>
+                    <th>Actions</th>
+                </tr>
+            </table>
+            <div id="create"></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
