@@ -18,9 +18,10 @@
            <div id="Investor-page" class="Investor-page hidden">
             <div>
                 <h2>Investors Page</h2>
-                <button id="add-Investor" onclick="AddInvestor()" >+Add Investor</button>
+                <button id="add-Investor" onclick="ShowCreateForm()" class="add">+Add Investor</button>
             </div>
             <table id="investors">
+                <thead>
                 <tr>
                     <th>Name</th>
                     <th>Surname</th>
@@ -28,10 +29,22 @@
                     <th>Max Investment</th>
                     <th>Actions</th>
                 </tr>
+                </thead>
+                <tbody id="investor-list">
+                </tbody>
             </table>
-            <div id="create"></div>
+            <div id="create" class="form hidden">
+                <button id="close" onclick="Close()" class="close">X</button>
+                <h2 id="h2">Add Investor</h2>
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="surname" placeholder="Surname">
+                <input type="number" id="min" placeholder="Min Investment">
+                <input type="number" id="max" placeholder="Max Investment">
+                <button onclick="CreateInvestor()" class="save">Save</button>
+            </div>
     </div>
     </div>
+    <div id="overlay" class="overlay hidden"></div>
     <script src="script.js"></script>
 </body>
 </html>
