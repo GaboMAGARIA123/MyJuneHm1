@@ -66,6 +66,7 @@ body {
     height: 100%;
     padding: 10px;
     flex-grow: 1;
+    width: 1300px;
 }
 
 .Investor-page table {

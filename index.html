@@ -9,42 +9,74 @@
 <body>
     <div class="container">
         <div class="items">
-        <h2>Dashboard</h2>
-        <button id="Dashboard" onclick="Dashboard()">🏠 Dashboard</button>
-        <button id="Investors>" onclick="Investor()">💼 Investors</button>
-        <button id="Funds" onclick="Funds()">📊 Funds</button>
+            <h2>Dashboard</h2>
+            <button id="Dashboard" onclick="Dashboard()">🏠 Dashboard</button>
+            <button id="InvestorsBtn" onclick="Investor()">💼 Investors</button>
+            <button id="FundsBtn" onclick="Funds()">📊 Funds</button>
+        </div>
+
+        <div class="main-content">
+            <h1 id="Text">Welcome to the Dashboard</h1>
+
+            <div id="Investor-page" class="Investor-page hidden">
+                <div>
+                    <h2>Investors Page</h2>
+                    <button id="add-Investor" onclick="ShowCreateForm()" class="add">+Add Investor</button>
+                </div>
+                <table id="investors">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Min Invesment</th>
+                            <th>Max Investment</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="investor-list">
+                    </tbody>
+                </table>
+                </div>
+
+            <div class="Fund-page hidden" id="Fund-page">
+                <div class="fundpageh">
+                    <h2>Fund Page</h2>
+                    <button id="add-Fund" onclick="ShowCreateFundForm()" class="add">+Add Fund</button>
+                </div>
+                <table id="funds">
+                    <thead>
+                        <tr>
+                            <th>Fund Name</th>
+                            <th>Amount</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fund-list">
+                    </tbody>
+                </table>
+                </div>
+        </div>
     </div>
-    <h1 id="Text">Welcome to the Dashboard</h1>
-           <div id="Investor-page" class="Investor-page hidden">
-            <div>
-                <h2>Investors Page</h2>
-                <button id="add-Investor" onclick="ShowCreateForm()" class="add">+Add Investor</button>
-            </div>
-            <table id="investors">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Surname</th>
-                    <th>Min Invesment</th>
-                    <th>Max Investment</th>
-                    <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody id="investor-list">
-                </tbody>
-            </table>
-            <div id="create" class="form hidden">
-                <button id="close" onclick="Close()" class="close">X</button>
-                <h2 id="h2">Add Investor</h2>
-                <input type="text" id="name" placeholder="Name">
-                <input type="text" id="surname" placeholder="Surname">
-                <input type="number" id="min" placeholder="Min Investment">
-                <input type="number" id="max" placeholder="Max Investment">
-                <button onclick="CreateInvestor()" class="save">Save</button>
-            </div>
+
+    <div id="create" class="form hidden">
+        <button id="close" onclick="Close()" class="close">X</button>
+        <h2 id="h2">Add Investor</h2>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="surname" placeholder="Surname">
+        <input type="number" id="min" placeholder="Min Investment">
+        <input type="number" id="max" placeholder="Max Investment">
+        <button onclick="CreateInvestor()" class="add">Save</button>
     </div>
-    </div>
+<div id="createfund" class="form2 hidden">
+    <button id="close2" onclick="Close2()" class="close">X</button>
+    <h2 id="h22">Add Fund</h2>
+    <input type="text" id="fundName" placeholder="Fund Name">
+    <input type="number" id="fundAmount" placeholder="Fund Amount">
+    <button onclick="CreateFund()" class="add">Save</button>
+</div>
+
     <div id="overlay" class="overlay hidden"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
