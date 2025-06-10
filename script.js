@@ -18,6 +18,7 @@ const Dashboard = () => {
     text.classList.remove('hidden')
     Investorspage.classList.add('hidden')
     text.innerHTML = 'Welcome to the Dashboard'
+    Fundpage.classList.add('hidden')
 }
 
 const ShowCreateForm = () => {
