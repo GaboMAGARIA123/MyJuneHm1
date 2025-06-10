@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="items">
@@ -14,7 +16,6 @@
             <button id="InvestorsBtn" onclick="Investor()">💼 Investors</button>
             <button id="FundsBtn" onclick="Funds()">📊 Funds</button>
         </div>
-
         <div class="main-content">
             <h1 id="Text">Welcome to the Dashboard</h1>
 
@@ -36,7 +37,7 @@
                     <tbody id="investor-list">
                     </tbody>
                 </table>
-                </div>
+            </div>
 
             <div class="Fund-page hidden" id="Fund-page">
                 <div class="fundpageh">
@@ -54,7 +55,7 @@
                     <tbody id="fund-list">
                     </tbody>
                 </table>
-                </div>
+            </div>
         </div>
     </div>
 
@@ -67,16 +68,17 @@
         <input type="number" id="max" placeholder="Max Investment">
         <button onclick="CreateInvestor()" class="add">Save</button>
     </div>
-<div id="createfund" class="form2 hidden">
-    <button id="close2" onclick="Close2()" class="close">X</button>
-    <h2 id="h22">Add Fund</h2>
-    <input type="text" id="fundName" placeholder="Fund Name">
-    <input type="number" id="fundAmount" placeholder="Fund Amount">
-    <button onclick="CreateFund()" class="add">Save</button>
-</div>
+    <div id="createfund" class="form2 hidden">
+        <button id="close2" onclick="Close2()" class="close">X</button>
+        <h2 id="h22">Add Fund</h2>
+        <input type="text" id="fundName" placeholder="Fund Name">
+        <input type="number" id="fundAmount" placeholder="Fund Amount">
+        <button onclick="CreateFund()" class="save">Save</button>
+    </div>
 
     <div id="overlay" class="overlay hidden"></div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

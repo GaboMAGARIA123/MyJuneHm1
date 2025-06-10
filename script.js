@@ -35,14 +35,38 @@ const CreateFund = () => {
     overlay.classList.add('hidden');
 
     const tr = document.createElement('tr');
+    tr.id = 'row'
     tr.innerHTML = `
-                    <td>${fundName}</td>
-                    <td>$${fundAmount}</td>
+                    <td>${fundName.value}</td>
+                    <td>$${fundAmount.value}</td>
                     <td>
-                        <button class="edit" onclick="Edit(this)">Edit</button>
+                        <button class="edit" onclick="Edit2(this)">Edit</button>
                         <button class="delete" onclick="Del(this)">Delete</button>
                     </td>`;
     document.getElementById('fund-list').appendChild(tr);
+
+    fundName.value = ''
+    fundAmount.value = ''
+}
+
+let = editing2row = null
+
+const Edit2 = (btn) => {
+    document.getElementById('h22').textContent = 'Edit Fund'
+    form2.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+    editing2row = btn.closest('tr');
+    fundName.value = editing2row.children[0].textContent;
+    fundAmount.value = editing2row.children[1].textContent.replace('$', '');
+    document.getElementById('fund-list').removeChild(editing2row);
+    editing2row = null;
+}
+
+const Close2 = () => {
+    form2.classList.add('hidden')
+    overlay.classList.add('hidden')
+    fundName.value = ''
+    fundAmount.value = ''
 }
 
 const Close = () => {

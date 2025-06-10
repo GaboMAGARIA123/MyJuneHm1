@@ -20,6 +20,48 @@ body {
     text-align: center;
 }
 
+.Fund-page {
+    padding: 10px;
+    width: 100%;
+}
+
+.fundpageh {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fundpageh button {
+    margin-right: 20px;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 230px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    z-index: 1001;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+};
+
+.Fund-page div {
+    display: flex;
+    width: 1300px;
+}
+
 #Dashboard {
     margin-top: 10px;
 }
@@ -69,7 +111,7 @@ body {
     width: 1300px;
 }
 
-.Investor-page table {
+table {
     margin-top: 10px;
     background-color: #f2f3f8;
     border-spacing: 0;
@@ -107,7 +149,7 @@ body {
     justify-content: space-between;
 }
 
-.Investor-page table th {
+table th {
     background-color: #f2f3f8;
     padding: 10px;
     text-align: center;
@@ -138,16 +180,31 @@ body {
     left: 10px;
 }
 
+.form2 h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
 .form {
     display: flex;
     flex-direction: column;
     width: 350px;
     height: 350px;
     background-color: #fff;
-    padding: 10px;border-radius: 5px;
+    padding: 10px;
+    border-radius: 5px;
     position: relative;
     justify-content: center;
     align-items: center;
+}
+
+.form2 input {
+     width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .form input {
@@ -198,7 +255,7 @@ body {
     align-items: center;
 }
 
-.Investor-page td {
+td {
     text-align: center;
     background-color: #fff;
     margin-top: 20px;
@@ -207,6 +264,10 @@ body {
     border-radius: 5px;
     padding: 8px;
 
+}
+
+table#funds {
+    width: 100%;
 }
 
 .edit {
